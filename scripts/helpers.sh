@@ -145,6 +145,8 @@ path_downstream()
     $DIR/node_path.sh down $1
 }
 
+# Note that OpenThread nodeids start from 1 and above ...
+# Whitefield nodeids start from 0 and above ...
 native_shell()
 {
     [[ "$1" == "" ]] && echo "Usage: native_shell <nodeid>" && return
